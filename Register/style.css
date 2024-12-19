@@ -246,6 +246,7 @@ body {
     width: 306px;
     height: 452px;
     padding: 20px;
+    border-radius: 8px;
     gap: 20px;
   }
 
@@ -299,20 +300,23 @@ body {
     letter-spacing: 0.2px;
   }
 
-  .username, .password {
+  .username,
+  .password {
     width: 258px;
     height: 45px;
     gap: 3px;
   }
 
-  .username p, .password p {
+  .username p,
+  .password p {
     font-size: 10px;
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 0.2px;
   }
 
-  .username input::placeholder, .input-password input::placeholder {
+  .username input::placeholder,
+  .input-password input::placeholder {
     font-size: 9px;
     line-height: 12px;
     letter-spacing: 0.12px;
