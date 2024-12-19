@@ -1,0 +1,354 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url(../assets/bg-register.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 529px;
+  height: 778px;
+  padding: 40px;
+  background-color: #181a1c;
+  opacity: 84%;
+  gap: 37px;
+  border-radius: 16px;
+}
+
+.logo {
+  display: flex;
+  width: 163px;
+  height: 44px;
+  gap: 10px;
+}
+
+.logo img {
+  width: 42px;
+  height: 39px;
+}
+
+.logo p {
+  display: flex;
+  font-family: "Londrina Solid", cursive;
+  font-size: 50px;
+  line-height: 55px;
+  align-items: center;
+  color: #fff;
+}
+
+.text-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 174px;
+  height: 65px;
+  gap: 8px;
+  color: #fff;
+}
+
+.text-register h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35.2px;
+}
+
+.text-register p {
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  width: 449px;
+  height: 81px;
+  gap: 6px;
+}
+
+.username p {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  letter-spacing: 0.2px;
+}
+
+.username input {
+  font-size: 16px;
+  color: #fff;
+  background-color: transparent;
+  width: 449px;
+  height: 50px;
+  border: 1px solid #e7e3fc3b;
+  border-radius: 24px;
+  padding: 14px 20px 14px 20px;
+  gap: 10px;
+}
+
+.username input::placeholder {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #c1c2c4;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+}
+
+.container-password {
+  display: flex;
+  flex-direction: column;
+  width: 449px;
+  height: 112px;
+  gap: 12px;
+}
+
+.password {
+  width: 100%;
+  height: 81px;
+  gap: 6px;
+}
+
+.password p {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  letter-spacing: 0.2px;
+}
+
+.input-password {
+  position: relative;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.input-password input {
+  width: 449px;
+  height: 50px;
+  border: 1px solid #e7e3fc3b;
+  color: #fff;
+  border-radius: 24px;
+  padding: 14px 20px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.input-password img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  transform: translate(-50%);
+}
+
+.input-password input::placeholder {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #c1c2c4;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+}
+
+.regis-forget {
+  display: flex;
+  justify-content: space-between;
+}
+
+.regis-forget p {
+  display: flex;
+  color: #c1c2c4;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+  align-items: center;
+}
+
+.regis-forget p a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.button-register {
+  display: flex;
+  flex-direction: column;
+  width: 449px;
+  height: 133px;
+  gap: 8px;
+  letter-spacing: 0.2px;
+  margin-top: 20px;
+}
+
+.button-register a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #3d4142;
+  color: #fff;
+  border: 1px solid #e7e3fc3b;
+  border-radius: 24px;
+  padding: 14px 20px;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 600;
+  line-height: 22.4px;
+  gap: 10px;
+}
+
+.button-register p {
+  display: flex;
+  justify-content: center;
+  color: #9d9ea1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.button-google a {
+  background-color: transparent;
+  gap: 20px;
+}
+
+.button-google img {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container-register {
+    width: 306px;
+    height: 452px;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .username,
+  .container-password,
+  .button-register {
+    width: 100%;
+  }
+
+  .username input,
+  .input-password input {
+    width: 260px;
+    height: 28px;
+    border-radius: 28px;
+    gap: 5px;
+  }
+
+  .logo {
+    width: 94px;
+    height: 24px;
+  }
+
+  .logo img {
+    width: 28px;
+    height: 24px;
+  }
+
+  .logo p {
+    margin-left: -5px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    line-height: 31px;
+  }
+
+  .text-register {
+    width: auto;
+    height: auto;
+  }
+
+  .text-register h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+  }
+
+  .text-register p {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+  }
+
+  .username, .password {
+    width: 258px;
+    height: 45px;
+    gap: 3px;
+  }
+
+  .username p, .password p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+  }
+
+  .username input::placeholder, .input-password input::placeholder {
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: 0.12px;
+  }
+
+  .container-password {
+    width: auto;
+    height: 66px;
+  }
+
+  .input-password img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .button-register {
+    margin-top: 5px;
+    width: 258px;
+    height: 79px;
+    gap: 4px;
+  }
+
+  .button-register a {
+    width: 258px;
+    height: 30px;
+    border-radius: 13px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+    padding: 8px 12px;
+  }
+
+  .regis-forget p {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+  }
+}
