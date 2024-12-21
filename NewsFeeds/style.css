@@ -204,23 +204,35 @@ body {
     gap: 32px;
 }
 
+.continue {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .continue h3 {
+    width: max-content;
     font-size: 32px;
     font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
     line-height: 35.2px;
+    left: calc((46% - 1720px) / 2);
+    color: #FFF;
 }
 
 .card {
-    width: 1720px;
+    width: max-content;
     height: 162px;
     display: flex;
     gap: 24px;
-    border: 1px solid red;
     position: relative;
 }
 
 .card-image {
-    position: relative;
+    position: relative; 
     overflow: hidden;
 }
 
@@ -282,6 +294,54 @@ body {
     font-size: 14px;
     line-height: 19.6px;
     letter-spacing: 0.2px;
+    background-color: transparent;
+}
+
+.card-arrow {
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    transform: translateY(-150%);
+    width: 44px;
+    height: 44px;
+    border: 1px solid #E7E3FC3B;
+    border-radius: 24px;
+    padding: 10px;
+    gap: 10px;
+    background: #2F3334;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    z-index: 2;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    transform: translateY(-150%);
+    width: 44px;
+    height: 44px;
+    border: 1px solid #E7E3FC3B;
+    border-radius: 24px;
+    padding: 10px;
+    gap: 10px;  
+    background: #2F3334;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    z-index: 2;
+}
+
+.card-arrow img {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+}
+
+.arrow-right img {
+    width: 16px;
+    height: 16px;
     background-color: transparent;
 }
 
