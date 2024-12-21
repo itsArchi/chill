@@ -297,18 +297,19 @@ body {
     background-color: transparent;
 }
 
-.card-arrow {
+.arrow-left {
     position: absolute;
     top: 50%;
     left: -22px;
-    transform: translateY(-150%);
+    transform: translateY(-50%);
     width: 44px;
     height: 44px;
     border: 1px solid #E7E3FC3B;
     border-radius: 24px;
     padding: 10px;
     gap: 10px;
-    background: #2F3334;
+    background: #2F3334 url('../assets/arrow-left.png') no-repeat center;
+    background-size: 16px 16px;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -319,33 +320,92 @@ body {
     position: absolute;
     top: 50%;
     right: -22px;
-    transform: translateY(-150%);
+    transform: translateY(-50%);
     width: 44px;
     height: 44px;
     border: 1px solid #E7E3FC3B;
     border-radius: 24px;
     padding: 10px;
     gap: 10px;  
-    background: #2F3334;
+    background: #2F3334 url('../assets/arrow-right.png') no-repeat center;
+    background-size: 16px 16px;
     display: flex;
     justify-content: center;
     align-items: center;    
     z-index: 2;
 }
 
-.card-arrow img {
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
-}
-
-.arrow-right img {
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
-}
-
 /* SECTION 3 TOP RATING*/
+#film-list {
+    border: 1px solid white;
+    height: 512px;
+    top: 990px;
+    padding: 40px 80px;
+    gap: 32px;
+}
+
+.film-list{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.film-list h3 {
+    width: max-content;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 35.2px;
+    left: calc((46% - 1720px) / 2);
+    color: #FFF;
+}
+
+.card-film {
+    width: max-content;
+    height: 365px;
+    display: flex;
+    gap: 28px;
+    position: relative;
+    border: 1px solid blue;
+}
+
+.card-film img {
+    width: 234px;
+    height: 365px;
+    gap: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.new-episode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108px;
+    height: 28px;
+    border: 1px solid #0F1E93;
+    border-radius: 24px;
+    background: #0F1E93;
+    padding: 4px 10px;
+    gap: 4px;
+    position: absolute;
+    top: 16px;
+    left: 11px;
+}
+
+.new-episode p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+    color: #FFF;
+    background: transparent;
+}
+
+
 /* SECTION 4 TRENDING*/
 /* SECTION 5 NEW RELEASE*/
 
