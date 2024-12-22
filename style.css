@@ -22,7 +22,7 @@ body {
   width: 529px;
   height: 663px;
   padding: 40px;
-  background-color: #181a1c;
+  background: #181A1CD6;
   opacity: 84%;
   gap: 37px;
   border-radius: 16px;
@@ -53,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 174px;
+  width: 185px;
   height: 65px;
   gap: 8px;
   color: #fff;
@@ -297,7 +297,7 @@ body {
   }
 
   .text-login {
-    width: 111px;
+    width: 140px;
     height: 43px;
     gap: 4px;
   }

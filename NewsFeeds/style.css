@@ -101,18 +101,21 @@ body {
   width: 1280px;
   height: 233px;
   z-index: 10;
+  background: none;
 }
 
 .hero-description {
   height: 148px;
   gap: 20px;
   color: #fff;
+  background: none;
 }
 
 .hero-description h1 {
   font-size: 48px;
   font-weight: 700;
   line-height: 52.8px;
+  background: none;
 }
 
 .hero-description p {
@@ -121,17 +124,20 @@ body {
   font-weight: 500;
   line-height: 25.2px;
   letter-spacing: 0.2px;
+  background: none;
 }
 
 .hero-tools {
   display: flex;
   justify-content: space-between;
+  background: none;
 }
 
 .hero-tools-list {
   display: flex;
   align-items: center;
   gap: 20px;
+  background: none;
 }
 
 .hero-tools-play a {
@@ -179,6 +185,14 @@ body {
   letter-spacing: 0.2px;
   border: 1px solid #c1c2c4;
   border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+.hero-tools-age p {
+  background: none;
 }
 
 .volume-off {
@@ -188,11 +202,16 @@ body {
   gap: 10px;
   border: 1px solid #c1c2c4;
   border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
 }
 
 .volume-off img {
   width: 24px;
   height: 24px;
+  background: none;
 }
 
 /* SECTION 2 CONTIONUE*/
@@ -380,6 +399,14 @@ body {
   position: relative;
 }
 
+.film-image {
+  width: max-content;
+  height: 365px;
+  display: flex;
+  gap: 28px;
+  position: relative;
+}
+
 .new-episode {
   display: flex;
   justify-content: center;
@@ -425,6 +452,10 @@ body {
 }
 
 /* FOOTER */
+
+.footer-genre img, .footer-faq img {
+    display: none;
+}
 .footer {
   width: 100%;
   height: 284px;
@@ -700,7 +731,6 @@ body {
   }
 
   #continue {
-    border: 1px solid blue;
     height: 235px;
     padding: 20px;
     gap: 20px;
@@ -745,10 +775,137 @@ body {
   }
 
   #film-list {
-    border: 1px solid cyan;
-    height: 189px;
-    top: 648px;
+    height: 250px;
+    padding: 20px;
     gap: 20px;
     display: flex;
+  }
+
+  .film-list h3 {
+    font-size: 20px;
+    line-height: 24px;
+    left: 0;
+  }
+
+  .card-film {
+    width: 390px;
+    height: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    position: relative;
+  }
+
+  .card-film img {
+    width: 95px;
+    height: 145px;
+    
+  }
+
+  .film-image {
+    width: max-content;
+    height: 145px;
+    display: flex;
+    gap: 28px;
+    position: relative;
+  }
+  
+  .film-image img {
+    width: 95px;
+    height: 145px;
+    gap: 10px;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .new-episode {
+    width: 45px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+    top: 8px;
+    left: 7px;
+  }
+
+  .new-episode p {
+    font-size: 5px;
+    line-height: 8px;
+    letter-spacing: 0.1px;
+  }
+
+  .top-ten {
+    width: 14.82px;
+    height: 21.82px;
+    padding: 1.91px;
+    gap: 4.78px;
+    right: 4.5px;
+  }
+
+  .top-ten p {
+    font-size: 6.69px;
+    line-height: 9.37px;
+    letter-spacing: 0.1px;
+  }
+
+  /* FOOTER */
+  .footer {
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+  }
+
+  .genre-items-list, .faq-items {
+    display: none;
+  }
+
+  .footer-items {
+    display: flex;
+    width: 370px;
+    height: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-copyright-logo img {
+    width: 28px;
+    height: 25px;
+  }
+
+  .footer-copyright-logo p {
+    font-size: 28px;
+    padding-left: 10px;
+    line-height: 26.4px;
+    font-family: 'Londrina Solid', cursive;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-arrow img, .faq-arrow img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    transform: rotate(-90deg);
+  }
+
+  .genre-title, .faq-title {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
